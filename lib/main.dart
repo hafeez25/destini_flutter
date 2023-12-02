@@ -78,7 +78,7 @@ class _StoryPage extends State<StoryPage> {
                     ),
                   ),
                   onPressed: () {
-
+                print(storyBrain.getStory());
                   },
                 ),
               ),
