@@ -70,8 +70,8 @@ class _StoryPage extends State<StoryPage> {
                       foregroundColor: Colors.white,
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.zero))),
-                  child: const Text(
-                    "Choice 1",
+                  child:  Text(
+                    storyBrain.getChoice1(),
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,
@@ -95,8 +95,8 @@ class _StoryPage extends State<StoryPage> {
                       foregroundColor: Colors.white,
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.zero))),
-                  child: const Text(
-                    "Choice 2",
+                  child:  Text(
+                    storyBrain.getChoice2(),
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,

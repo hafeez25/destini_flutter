@@ -33,7 +33,14 @@ class StoryBrain {
         choice2: '')
   ];
 
-    getStory(){
+  getStory() {
     return _storyData[0].storyTitle;
+  }
+
+  getChoice1(){
+    return _storyData[0].choice1;
+  }
+  getChoice2(){
+    return _storyData[0].choice2;
   }
 }
