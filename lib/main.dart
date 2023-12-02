@@ -33,8 +33,11 @@ class StoryPage extends StatefulWidget {
 }
 
 class _StoryPage extends State<StoryPage> {
+  String choice1 = 'Choice 1';
+  String choice2 = 'Choice 2';
   @override
   Widget build(BuildContext context) {
+
       return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
@@ -71,14 +74,17 @@ class _StoryPage extends State<StoryPage> {
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.zero))),
                   child:  Text(
-                    storyBrain.getChoice1(),
+                    choice1,
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,
                     ),
                   ),
                   onPressed: () {
-                print(storyBrain.getStory());
+                    setState(() {
+                      choice1 = storyBrain.getChoice1();
+
+                    });
                   },
                 ),
               ),
@@ -96,13 +102,17 @@ class _StoryPage extends State<StoryPage> {
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.zero))),
                   child:  Text(
-                    storyBrain.getChoice2(),
+                    choice2,
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,
                     ),
                   ),
                   onPressed: () {
+                    setState(() {
+                      choice2 = storyBrain.getChoice2();
+
+                    });
 
                   },
                 ),
