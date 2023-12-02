@@ -83,6 +83,8 @@ class _StoryPage extends State<StoryPage> {
                   onPressed: () {
                     setState(() {
                       choice1 = storyBrain.getChoice1();
+                      storyBrain.nextStory(2);
+
 
                     });
                   },
@@ -111,6 +113,7 @@ class _StoryPage extends State<StoryPage> {
                   onPressed: () {
                     setState(() {
                       choice2 = storyBrain.getChoice2();
+                      storyBrain.nextStory(2);
 
                     });
 
